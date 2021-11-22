@@ -1,0 +1,63 @@
+.tournoi-panel{
+    border: 1px solid #d8d8d8 ;
+    margin: 10px 0 ;
+}
+
+.tournoi-header .title{
+    padding: 5px 10px ;
+    background-color: #279f2b ;
+    color: #fff;
+    display: inline-block ;
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+}
+
+.tournoi-body{
+    padding: 15px ;
+    text-align: center ;
+}
+
+.tournoi-body section{
+    margin : 10px 0 ;
+}
+
+.tournoi-body .flex-container{
+    padding: 5px ;
+    align-items: center ;
+}
+
+.tournoi-body .flex-container>div{
+    width: 33.333333% ;
+}
+
+.tournoi-body [data-cat="icon"] .fa{
+    font-size: 40px ;
+}
+
+.tournoi-body [data-cat="value"]{
+    font-size: 15px ;
+    color : #1d2537 ;
+    font-weight: bold ;
+    padding: 10px 5px ;
+}
+
+.tournoi-sport{
+    padding: 8px ;
+    background-color: #ededed ;
+    font-size: 15px ;
+}
+
+.tournoi-poule{
+    text-align: left ;
+    margin: 8px 0 5px 0 ;
+    font-weight: bold ;
+    font-size: 15px ;
+}
+
+table.result tbody tr td{
+    border-top: 1px solid #bcbcbc ;
+}
+
+table.result tr.poule td{
+    border: 0!important ;
+}

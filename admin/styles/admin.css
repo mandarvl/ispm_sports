@@ -1,0 +1,294 @@
+header{
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3) ;
+    position: relative ;
+}
+
+#admin-sidebar{
+    position: fixed ;
+    width: 215px ;
+    height: 100% ;
+    left: 0 ;
+    background-color: #2C2C2C;
+    z-index: 100 ;
+    overflow: hidden ;
+    transition: .3s ;
+}
+
+#admin-sidebar.close{
+    width: 0px ;
+}
+
+#admin-sidebar li{
+    padding: 10px 15px;
+    display: block ;
+}
+
+#admin-sidebar li:hover, #admin-sidebar li.active{
+    background-color: #279f2b;
+}
+
+#admin-sidebar li a{
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap ;
+}
+
+.sidebar-collapser{
+    position:fixed ;
+    bottom: 10px ;
+    left: 220px ;
+    padding: 0px!important ;
+    z-index: 10 ;
+    transition: .3s ;
+}
+
+.sidebar-collapser button{
+    border: 0 ;
+    border-radius: 50% ;
+    padding: 0 ;
+    width: 30px ;
+    height: 30px ;
+    background-color: #2C2C2C;
+    opacity: .9 ;
+}
+
+#admin-sidebar.close .sidebar-collapser{
+    left: 3px ;
+}
+
+#admin-content{
+    padding: 10px ;
+    margin-left: 215px ;
+    transition: .3s ;
+}
+
+#admin-content.close{
+    margin-left: 0px ;
+}
+
+#admin-content>.summary{
+    margin-bottom: 30px ;
+}
+
+header{
+    position: fixed;
+    left: 0 ;
+    right: 0 ;
+    z-index: 101;
+}
+
+table.custom-table{
+    margin-top: 0 ;
+}
+
+#contenu{
+    margin-top: 63px ;
+}
+
+#left, #right{
+    padding : 0 5px ;
+}
+
+#left{
+    width: 25%;
+    height: 100%
+}
+
+#right{
+    width: 75%;
+    height: 100%
+}
+
+#right>div:first-child{
+    margin-bottom: 12px ;
+}
+
+#right .flex-container{
+    /*align-items: center ;*/
+}
+
+.section-summary{
+    padding: 0 0 18px 0;
+    font-size: 15px;
+}
+
+.blue, .blue *{
+    color: #2B4175;
+}
+
+.red, .red *{
+    color: #D20D0D;
+}
+
+.thead{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.panel-center{
+    width: 50%;
+    margin: 140px auto;
+    background: white;
+    border-radius: 3px ;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.65) ;
+}
+
+.panel-center.small{
+    width: 340px ;
+}
+
+.panel-header{
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: #2C2C2C;
+    padding: 8px ;
+}
+
+.panel-body{
+    padding: 20px ;
+}
+
+.edit-row td{
+    background-color: #e1e1e1 ;
+}
+
+.edit-row .team-logo{
+    cursor: pointer ;
+}
+
+.edit-row .btn-icon, .match-edit .btn-icon{
+    background-color: transparent ;
+    color: #279f2b ;
+}
+
+.cancel-edit>*{
+    color: #a31313 ;
+    font-size: 19px ;
+}
+
+.edit-row .btn-icon:hover{
+    opacity: 0.8 ;
+}
+
+.edit-row input.text-field{
+    background-color: #fff ;
+    box-shadow: none ;
+    border: 1px solid #b3b3b3 ;
+}
+
+#matchs .match .text-field{
+    padding: 5px ;
+}
+
+#matchs .match{
+    width: calc(100% / 4);
+    height: 155px ;
+    padding: 10px ;
+    background-color: #fff ;
+    border: 1px #CAC7C7 solid ;
+    box-sizing: border-box;
+}
+
+#matchs .match-info>div{
+    margin-bottom: 12px ;
+}
+
+#matchs .match-edit input[type="number"]{
+    width: 50px ;
+}
+
+#matchs .match-edit .input-container{
+    margin-bottom: 4px ;
+}
+
+#matchs .current .date{
+    background-color: #3b6a3c;
+    color: #fff;
+    padding: 3px 4px;
+    font-size: 14px;
+}
+
+.welcome-message{
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.edit-mode-only{
+    display: none ;
+}
+
+body.edit .edit-mode-only{
+    display: block ;
+}
+
+body.edit .edit-row img.team-logo:not(.black-white){
+    animation: 3s infinite imgChangeColor ease ;
+}
+
+@keyframes imgChangeColor{
+    0%{
+        filter: brightness(100%);
+    }
+    50%{
+        filter: brightness(115%) ;
+    }
+    100%{
+        filter: brightness(100%) ;
+    }
+}
+
+.disabled{
+    background-color: #d4d4d4;
+    opacity: 0.6;
+}
+
+@media(max-width: 1024px){
+    
+    #admin-content{
+        margin-left: 0 ;
+    }
+    
+    #left, #right{
+        padding: 0 ;
+    }
+    
+    #right{
+        margin-top: 15px ;
+    }
+}
+
+@media(max-width: 780px){
+    #matchs .match{
+        width: calc(100% / 2);
+    }
+    
+    .panel-center{
+        width: 75%!important ;
+    }
+}
+
+@media(max-width: 480px){
+    #matchs .match{
+        width: 100% ;
+    }
+    
+    #admin-content{
+        padding: 5px ;
+    }
+    
+    .welcome-message{
+        display: none ;
+    }
+    
+    .panel-body{
+        padding: 7px ;
+    }
+    
+    .panel-center{
+        margin: 100px auto ;
+        width: 95%!important ;
+    }
+}

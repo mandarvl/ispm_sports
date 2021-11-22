@@ -1,0 +1,27 @@
+.match-result{
+    width: calc(100% / 2 - 5px);
+    padding: 10px 5px ;
+    background-color: #fff ;
+    border: 1px #CAC7C7 solid ;
+    box-sizing: border-box;
+    margin-bottom: 10px ;
+}
+
+.match-result:nth-child(2n) {
+    margin-left: 10px;
+}
+
+.match-result table.matchs{
+    margin-top: 10px ;
+}
+
+#main-content li{
+    margin: 8px 0;
+}
+
+@media(max-width:780px){
+    .match-result{
+        width: 100%!important ;
+        margin-left: 0!important ;
+    }
+}

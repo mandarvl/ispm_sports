@@ -1,0 +1,91 @@
+.poule-menu{
+    margin-bottom: 20px ;
+}
+
+.poule-menu ul{
+    padding: 0 ;
+}
+
+.poule-menu li{
+    display: inline-block ;
+    margin-right: 2px ;
+}
+
+.poule-menu li a{
+    display: inline-block ;
+    padding: 10px ;
+    color: #6a6a6a ;
+}
+
+.poule-menu li a:hover{
+    text-decoration: none ;
+    color: #242424 ;
+}
+
+.poule-menu li.selected{
+    border-bottom: 1px solid #000 ;
+}
+
+.poule-menu li.selected a{
+    color: #242424 ;
+}
+
+table.result thead{
+    color: #848484 ;
+}
+
+table.result thead tr td>*{
+    cursor: pointer ;
+}
+
+table.result tr td{
+    width: 20px ;
+    padding: 5px 10px ;
+    border-bottom: 1px solid #bcbcbc ;
+    text-align: center ;
+}
+
+table.result tr td.team-rank{
+    max-width: 10px ;
+}
+
+table.result tr td.team{
+    width: auto ;
+    text-align: left ;
+}
+
+table.result tr td.team-rank{
+    font-weight: bold ;
+    font-size: 18px ;
+    margin: 0 ;
+}
+
+table.result tr td table tr td{
+    padding:0px 10px ;
+    width:auto ;
+    border: 0 ;
+    max-width: 100%;
+}
+
+table.result tr td table tr td:first-child{
+    max-width: 100% ;
+}
+
+table.result tr td table .team-rank{
+    margin: 0 ;
+    font-size: 20px ;
+}
+
+@media(max-width:480px){
+    table.result tr td{
+        padding: 5px ;
+    }
+    
+    table.result tr td.team{
+        width: 50px ;
+    }
+    
+    table.result tr td table tr td {
+        padding: 0 2px ;
+    }
+}

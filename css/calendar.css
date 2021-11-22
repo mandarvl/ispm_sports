@@ -1,0 +1,70 @@
+table.matchs.border td{
+    border-bottom: 1px solid #b9b9b9 ;
+}
+
+table.matchs{
+    margin: 5px 0 ;
+}
+
+table.matchs td{
+    padding: 5px 0px ;
+}
+
+table.matchs .team{
+    width: 35% ;
+    color: #777777 ;
+    text-transform: uppercase ;
+}
+
+table.matchs .logo{
+    padding-left:10px ;
+    padding-right: 10px ;
+}
+
+
+table.matchs .score{
+    text-align: center ;
+    font-weight: bold ;
+    font-size: 17px ;
+    min-width: 70px ;
+}
+
+table.matchs .date{
+    font-size: 12px ;
+    color: #777777 ;
+    padding: 5px ;
+    text-align: center ;
+}
+
+table.matchs.small .logo{
+    width: 20px ;
+    padding-left: 0 ;
+    padding-right: 0 ;
+}
+
+table.matchs.small .team{
+    font-size: 13px ;
+}
+
+table.matchs.small .score{
+    min-width: 50px ;
+    font-size: 15px ;
+}
+
+table.matchs.small .date{
+    border: 1px dotted;
+    border-color: #c2c2c2 transparent;
+}
+
+#calendar table.matchs{
+    margin: 20px 0 ;
+}
+
+#current{
+    box-shadow: 0px 0px 4px rgba(47, 47, 47, 0.52);;
+}
+
+#calendar table.matchs#current thead tr td {
+    background-color: #313931;
+    color: white ;
+}
